@@ -1,0 +1,306 @@
+Program.Sub.ScreenSU.Start
+gui.frmJob..create
+gui.frmJob..caption("Job Entry")
+gui.frmJob..size(6135,5160)
+gui.frmJob..position(0,0)
+gui.frmJob..event(unload,frmjob_unload)
+gui.frmJob..alwaysontop(False)
+gui.frmJob..fontname("Arial")
+gui.frmJob..fontsize(8)
+gui.frmJob..forecolor(0)
+gui.frmJob..fontstyle(,,,,)
+gui.frmJob..BackColor(-2147483633)
+gui.frmJob..controlbox(True)
+gui.frmJob..maxbutton(True)
+gui.frmJob..minbutton(True)
+gui.frmJob..mousepointer(0)
+gui.frmJob..moveable(True)
+gui.frmJob..sizeable(True)
+gui.frmJob..ShowInTaskBar(True)
+gui.frmJob..titlebar(True)
+gui.frmJob.txtJob.create(textbox,"",True,2880,585,0,1400,1100,True,0,Tahoma,14,-2147483643,1)
+gui.frmJob.txtJob.maxLength(6)
+gui.frmJob.lbl1.create(label,"Please enter job number (6 digits)",True,4485,705,0,800,500,True,0,Tahoma,14,-2147483633,0)
+gui.frmJob.cmd1.create(button)
+gui.frmJob.cmd1.caption("Submit")
+gui.frmJob.cmd1.visible(True)
+gui.frmJob.cmd1.size(2055,1245)
+gui.frmJob.cmd1.zorder(0)
+gui.frmJob.cmd1.position(1800,2200)
+gui.frmJob.cmd1.enabled(True)
+gui.frmJob.cmd1.fontname("Tahoma")
+gui.frmJob.cmd1.fontsize(8)
+gui.frmJob.cmd1.event(click,cmd1_click)
+
+
+gui.frmSuffix..create
+gui.frmSuffix..caption("Choose Suffix")
+gui.frmSuffix..size(6255,6045)
+gui.frmSuffix..position(0,0)
+gui.frmSuffix..event(unload,frmsuffix_unload)
+gui.frmSuffix..alwaysontop(False)
+gui.frmSuffix..fontname("Arial")
+gui.frmSuffix..fontsize(8)
+gui.frmSuffix..forecolor(0)
+gui.frmSuffix..fontstyle(,,,,)
+gui.frmSuffix..BackColor(-2147483633)
+gui.frmSuffix..controlbox(True)
+gui.frmSuffix..maxbutton(True)
+gui.frmSuffix..minbutton(True)
+gui.frmSuffix..mousepointer(0)
+gui.frmSuffix..moveable(True)
+gui.frmSuffix..sizeable(True)
+gui.frmSuffix..ShowInTaskBar(True)
+gui.frmSuffix..titlebar(True)
+gui.frmSuffix.cboSuffix.create(combobox)
+gui.frmSuffix.cboSuffix.text("")
+gui.frmSuffix.cboSuffix.visible(True)
+gui.frmSuffix.cboSuffix.size(2265,330)
+gui.frmSuffix.cboSuffix.zorder(0)
+gui.frmSuffix.cboSuffix.position(1800,1095)
+gui.frmSuffix.cboSuffix.enabled(True)
+gui.frmSuffix.cboSuffix.fontname("Tahoma")
+gui.frmSuffix.cboSuffix.fontsize(14)
+gui.frmSuffix.cboSuffix.fontstyle(True,False,False,False)
+gui.frmSuffix.cmd2.create(button)
+gui.frmSuffix.cmd2.caption("Submit")
+gui.frmSuffix.cmd2.visible(True)
+gui.frmSuffix.cmd2.size(2055,1245)
+gui.frmSuffix.cmd2.zorder(0)
+gui.frmSuffix.cmd2.position(1860,3515)
+gui.frmSuffix.cmd2.enabled(True)
+gui.frmSuffix.cmd2.fontname("Tahoma")
+gui.frmSuffix.cmd2.fontsize(8)
+gui.frmSuffix.cmd2.event(click,cmd2_click)
+gui.frmSuffix.lbl1.create(label,"Please select suffix",True,2445,420,1,1700,500,True,0,Tahoma,14,-2147483633,0)
+gui.frmSuffix.lbl2.create(label,"Please select suffix",True,2445,420,1,8100,2600,True,0,Tahoma,14,-2147483633,0)
+
+
+gui.frmSequence..create
+gui.frmSequence..caption("Choose Sequence")
+gui.frmSequence..size(6135,5640)
+gui.frmSequence..position(0,0)
+gui.frmSequence..event(unload,frmsequence_unload)
+gui.frmSequence..alwaysontop(False)
+gui.frmSequence..fontname("Tahoma")
+gui.frmSequence..fontsize(14)
+gui.frmSequence..forecolor(0)
+gui.frmSequence..fontstyle(True,False,False,False,)
+gui.frmSequence..BackColor(-2147483633)
+gui.frmSequence..controlbox(True)
+gui.frmSequence..maxbutton(True)
+gui.frmSequence..minbutton(True)
+gui.frmSequence..mousepointer(0)
+gui.frmSequence..moveable(True)
+gui.frmSequence..sizeable(True)
+gui.frmSequence..ShowInTaskBar(True)
+gui.frmSequence..titlebar(True)
+gui.frmSequence.lbl1.create(label,"Please select sequence",True,3105,420,1,1600,400,True,0,Tahoma,14,-2147483633,0)
+gui.frmSequence.cboSequence.create(combobox)
+gui.frmSequence.cboSequence.text("")
+gui.frmSequence.cboSequence.visible(True)
+gui.frmSequence.cboSequence.size(2265,330)
+gui.frmSequence.cboSequence.zorder(0)
+gui.frmSequence.cboSequence.position(1915,1000)
+gui.frmSequence.cboSequence.enabled(True)
+gui.frmSequence.cboSequence.fontname("Tahoma")
+gui.frmSequence.cboSequence.fontsize(14)
+gui.frmSequence.cboSequence.fontstyle(True,False,False,False)
+gui.frmSequence.cmd3.create(button)
+gui.frmSequence.cmd3.caption("Submit")
+gui.frmSequence.cmd3.visible(True)
+gui.frmSequence.cmd3.size(2055,1245)
+gui.frmSequence.cmd3.zorder(0)
+gui.frmSequence.cmd3.position(2000,3500)
+gui.frmSequence.cmd3.enabled(True)
+gui.frmSequence.cmd3.fontname("Tahoma")
+gui.frmSequence.cmd3.fontsize(8)
+gui.frmSequence.cmd3.event(click,cmd3_click)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Variable.Global.sSuffix.Declare(String)
+Variable.Global.sJob.Declare(String)
+Variable.Global.sSeq.Declare(String)
+Variable.Global.bolPause.Declare(Boolean,true)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Coded by: JSO
+'Project Start Date: 11/1/2011
+'Hooks:
+'  15770
+'Notes:
+'  For Gunderlin
+
+Function.ODBC.Connection!con.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass,180)
+
+
+Gui.frmJob..Show
+
+
+
+Program.Sub.Main.End
+
+program.sub.cmd1_click.start
+V.Local.sSql.Declare(String)
+V.Local.sMsg.Declare(String)
+V.Local.i.Declare(Long)
+V.Local.iCount.Declare(Long)
+
+V.Global.sJob.Set(V.Screen.frmJob!txtJob.Text)
+Gui.frmJob..Visible(false)
+
+F.Intrinsic.String.Concat("SELECT DISTINCT SUFFIX FROM V_JOB_OPERATIONS WHERE JOB = '",V.global.sJob,"'",V.Local.sSql)
+F.ODBC.Connection!con.OpenRecordsetRo("rst1",V.Local.sSql)
+F.Intrinsic.Control.If(V.ODBC.con!rst1.EOF,<>,True)
+	' Count rows in recordset
+	F.Intrinsic.Control.DoUntil(V.ODBC.con!rst1.EOF,=,True)
+		F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+		F.ODBC.con!rst1.MoveNext
+	F.Intrinsic.Control.loop
+	F.odbc.con!rst1.Requery
+	F.Intrinsic.Control.If(V.local.iCount,=,1)
+		V.global.sSuffix.set(V.odbc.con!rst1.fieldval!SUFFIX)
+
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Math.Sub(V.Local.iCount,1,V.Local.iCount)
+		F.Intrinsic.Control.For(V.Local.i,0,V.local.iCount,1)
+			Gui.frmSuffix.cboSuffix.AddItem(V.ODBC.con!rst1.FieldVal!SUFFIX,V.Local.i)
+			F.ODBC.con!rst1.MoveNext
+		
+		F.Intrinsic.Control.Next(V.Local.i)
+		Gui.frmSuffix..Show
+		V.Global.bolPause.Set(True)
+		F.Intrinsic.Control.DoUntil(V.Global.bolPause,=,False)
+			F.Intrinsic.Control.DoEvents
+		F.Intrinsic.Control.Loop
+
+	F.Intrinsic.Control.Endif
+
+	F.ODBC.con!rst1.Close
+
+'	F.Intrinsic.Control.CallSub(Sequence)
+	V.global.sSeq.set("995000")
+	F.Intrinsic.Control.CallSub(Callcore)
+
+F.Intrinsic.Control.Else
+
+	F.ODBC.con!rst1.Close
+	F.Intrinsic.String.Concat("Job number - ",V.Global.sJob," - not found, please try again",V.Local.sMsg)
+	F.Intrinsic.UI.Msgbox(V.Local.sMsg)
+	Gui.frmjob..visible(true)
+
+F.Intrinsic.Control.EndIf
+
+
+
+program.sub.cmd1_click.end
+
+program.sub.cmd2_click.start
+
+
+V.Global.sSuffix.Set(V.Screen.frmSuffix!cboSuffix.Text)
+Gui.frmSuffix..Visible(false)
+V.Global.bolPause.Set(False)
+
+
+program.sub.cmd2_click.end
+
+program.sub.frmjob_unload.start
+Function.ODBC.Connection!Con.Close
+
+Function.Intrinsic.Control.End
+
+program.sub.frmjob_unload.end
+
+program.sub.frmsuffix_unload.start
+Function.ODBC.Connection!Con.Close
+
+Function.Intrinsic.Control.End
+
+program.sub.frmsuffix_unload.end
+
+Program.Sub.Sequence.Start
+V.Local.sSql.Declare(String)
+V.Local.sMsg.Declare(String)
+V.Local.i.Declare(Long)
+V.Local.sEmpDept.Declare(String)
+V.Local.sCloseFlag.Declare(String)
+V.Local.sJobSuffSeq.Declare(String)
+V.Local.iCount.Declare(Long)
+V.Local.sWC.Declare(String)
+
+F.Intrinsic.String.Concat("SELECT DISTINCT SEQ FROM V_JOB_OPERATIONS WHERE JOB = '",V.global.sJob,"' AND SUFFIX = '",V.Global.sSuffix,"' ORDER BY SEQ",V.Local.sSql)
+F.ODBC.Connection!con.OpenRecordsetRo("rst1",V.Local.sSql)
+F.Intrinsic.Control.If(V.ODBC.con!rst1.EOF,<>,True)
+	' Count rows in recordset
+	F.Intrinsic.Control.DoUntil(V.ODBC.con!rst1.EOF,=,True)
+		F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+		F.ODBC.con!rst1.MoveNext
+	F.Intrinsic.Control.loop
+	F.odbc.con!rst1.Requery
+	F.Intrinsic.Control.If(V.local.iCount,=,1)
+		V.Global.sSeq.Set(V.ODBC.con!rst1.FieldVal!SEQ)
+	
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Math.Sub(V.Local.iCount,1,V.Local.iCount)
+		F.Intrinsic.Control.For(V.Local.i,0,V.Local.iCount,1)
+			Gui.frmSequence.cboSequence.AddItem(V.ODBC.con!rst1.FieldVal!SEQ,V.Local.i)
+			F.ODBC.con!rst1.MoveNext
+		F.Intrinsic.Control.Next(V.Local.i)
+
+		V.Global.bolPause.Set(True)
+		Gui.frmSequence..Show
+		F.Intrinsic.Control.DoUntil(V.Global.bolPause,=,False)
+			F.Intrinsic.Control.DoEvents
+		F.Intrinsic.Control.Loop
+
+	F.Intrinsic.Control.Endif
+
+F.Intrinsic.Control.EndIf
+F.ODBC.con!rst1.Close
+
+' Clock user into this new job sending job, suffix, seq
+F.Intrinsic.Control.CallSub(Callcore)
+
+
+
+
+
+Program.Sub.Sequence.End
+
+program.sub.cmd3_click.start
+
+V.Global.sSeq.Set(V.Screen.frmSequence!cboSequence.Text)
+Gui.frmSequence..Visible(false)
+V.Global.bolPause.Set(False)
+
+
+
+
+program.sub.cmd3_click.end
+
+Program.Sub.CallCore.Start
+V.Local.sParams.Declare(String)
+
+F.Intrinsic.String.Concat(V.Global.sJob,"!*!",V.Global.sSuffix,"!*!",V.global.sSeq,"!*! !*! !*! !*! ",V.Local.sParams)
+F.Global.General.CallWrapperAsync(450150,V.Local.sParams)
+
+Function.ODBC.Connection!Con.Close
+F.Intrinsic.Control.End
+
+Program.Sub.CallCore.End
+
+program.sub.frmsequence_unload.start
+Function.ODBC.Connection!Con.Close
+
+Function.Intrinsic.Control.End
+
+
+program.sub.frmsequence_unload.end
+
+
